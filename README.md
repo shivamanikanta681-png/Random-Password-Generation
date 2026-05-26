@@ -13,17 +13,17 @@ A production-style Python password generator with:
 ## Examples
 
 ```bash
-python main.py --length 16 --no-special
-python main.py --length 20 --copy
-python main.py --passphrase --words 5 --separator -
-python main.py --service github --username student --save
-python main.py --list
+python -m src.cli --length 16 --no-special
+python -m src.cli --length 20 --copy
+python -m src.cli --passphrase --words 5 --separator -
+python -m src.cli --service github --username student --save
+python -m src.cli --list
 ```
 
 ## Web UI
 
 ```bash
-python web_app.py
+python main.py
 ```
 
 Then open `http://127.0.0.1:8000`.
